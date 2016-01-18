@@ -15,15 +15,7 @@
             layout="@layout/toolbar1" />
     </LinearLayout>
 
-    <ImageButton
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/imageAdd"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:src="@drawable/button_add"
-        android:background="@null"
-        />
+
 
     <ListView
         android:layout_width="wrap_content"
@@ -43,8 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:clickable="true"
-        android:src="@drawable/ic_done"
-        app:layout_anchor="@id/viewA"
+        android:src="@drawable/button_add"
+        app:layout_anchor="@id/toolbar"
         app:layout_anchorGravity="bottom|right|end"/>
 
 </android.support.design.widget.CoordinatorLayout>

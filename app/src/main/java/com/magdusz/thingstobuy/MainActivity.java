@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
     }
 
     private void addButtonListener() {
-        ImageView addBtn = (ImageView)findViewById(R.id.imageAdd);
+        ImageView addBtn = (ImageView)findViewById(R.id.fab);
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
