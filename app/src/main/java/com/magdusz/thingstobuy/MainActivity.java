@@ -10,6 +10,9 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 
 public class MainActivity extends Activity {
@@ -22,6 +25,20 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         addButtonListener();
+
+        //generate list
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("item1");
+        list.add("item2");
+        list.add("item3");
+
+        //instantiate custom adapter
+        MyCustomAdapter adapter = new MyCustomAdapter(list, this);
+
+        //handle listview and assign adapter
+        ListView lView = (ListView)findViewById(R.id.listView);
+        lView.setAdapter(adapter);
+
     }
 
     private void addButtonListener() {
@@ -30,9 +47,11 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Log.d(DEBBUGTAG, "Klik ino jeden");
+
             }
         });
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

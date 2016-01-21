@@ -19,5 +19,6 @@
     <color name="textColorPrimary">#FFFFFF</color>
     <color name="windowBackground">#FFFFFF</color>
     <color name="navigationBarColor">#000000</color>
-    <color name="colorAccent">#B388FF</color>
+    <color name="colorAccent">#8C9EFF</color>
+    <color name="sto">#D1C4E9</color>
 </resources>
